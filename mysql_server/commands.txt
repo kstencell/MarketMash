@@ -1,0 +1,7 @@
+docker run --name marketmash-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=JGXZ0Ds9jKCH2NAbnVHB -d mysql
+
+(p = ports, e = environment variables, d = detach)
+
+
+docker build -t marketmash_mysql_server . 
+docker build -p 3306:3306 -v C:\Users\Karl\source\repos\Projects\MarketMash\mysql-server:/var/lib/mysql -d marketmash_mysql_server
