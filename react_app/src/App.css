@@ -16,7 +16,18 @@
   width: 100%;
 }
 
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .verses {
-  height: 200px;
-  width: auto;
+  max-height: 250px !important;
+  max-width: 250px !important;
+}
+
+.gladiators {
+  max-height: 260px !important;
+  max-width: 588px !important;
 }
