@@ -5,9 +5,12 @@ import './App.css';
 import axios from 'axios';
 import { updateCompanies } from './redux/companies';
 import Header from './Components/Header'
+import Scroll from './Components/Scroll'
 // import CompaniesContainer from './Components/CompaniesContainer';
 import CompanyTile from './Components/CompanyTile'
 import gladiators from './assets/gladiators-trimmed.png';
+import gladiators2 from './assets/gladiators-2-trimmed.png';
+import scrollPlaceholder from './assets/scroll-placeholder.png'
 import vs from './assets/vs-1.png';
 
 
@@ -38,21 +41,24 @@ function App() {
     <div className='app'>
       <Header/>
       <Row className='d-flex body-container w-100 p-0 m-0'>
-        <Col className='col-sm-4 m-0 p-0'>
-          <CompanyTile className='m-0 p-0'/>
+        <Col className='outter-cols m-0 p-0 d-flex align-items-end justify-content-center'>
+          <img className='gladiators1' src={gladiators}></img>
         </Col>
-        <Container className='image-container col-sm-4 m-0 p-0'>
-          <Row className='w-100 m-0 p-0 justify-content-center'>
-            {/* fuck */}
+        <Col className='inner-col col-sm-4 m-0 p-0 d-flex'>
+          <Col className='col-sm-4 m-0 p-0 d-flex justify-content-center align-items-end'>
+            {/* <Scroll className='scroll-left scroll'/> */}
+            {/* <div className='scroll-placeholder'/> */}
+            <img src={scrollPlaceholder} className='scroll-placeholder'/>
+          </Col>
+          <Col className='col-sm-4 m-0 p-0 d-flex justify-content-center align-items-center'>
             <img className='verses' src={vs}></img>
-          </Row>
-          <Row className='w-100 m-0 p-0 justify-content-center'>
-            {/* me */}
-            <img className='gladiators' src={gladiators}></img>
-          </Row>
-        </Container>
-        <Col className='col-sm-4 m-0 p-0'>
-          <CompanyTile className='m-0 p-0'/>
+          </Col>
+          <Col className='col-sm-4 m-0 p-0 d-flex justify-content-center align-items-end'>
+            <img src={scrollPlaceholder} className='scroll-placeholder scroll-right'/>
+          </Col>
+        </Col>
+        <Col className='outter-cols m-0 p-0 d-flex align-items-end justify-content-center'>
+          <img className='gladiators2' src={gladiators2}></img>
         </Col>
       </Row>
     </div>
