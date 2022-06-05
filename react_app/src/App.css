@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
 .app {
   margin: 0;
   padding: 0;
@@ -16,48 +18,17 @@
   width: 100%;
 }
 
-.inner-col {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width:50%;
-}
-
-.outter-cols {
-  max-width: 25%;
-}
-
-.verses {
-  max-height: 200px !important;
-  max-width: 200px !important;
-}
-
 .gladiators1 {
-  /* max-height: 260px !important; */
   width:100%;
   object-fit: contain;
-  /* max-width: 588px !important; */
   margin-bottom: 7.5vh;
 }
 
 .gladiators2{
-  /* max-height:230px !important; */
   width:90%;
   object-fit: contain;
   margin-bottom: 8vh;
 }
 
-.scroll {
-  width:100%;
-}
 
-.scroll-placeholder {
-  /* width: 90%; */
-  /* height: 60%; */
-  /* background-color: blue; */
-  margin-bottom: 8.5vh;
-}
 
-.scroll-right {
-  transform: scaleX(-1);
-}

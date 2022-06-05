@@ -1,22 +1,11 @@
 import React from 'react';
-import { Row, Col, Container} from 'react-bootstrap';
-import { useDispatch, useSelector } from 'react-redux';
+import { Row, Col} from 'react-bootstrap';
 import './App.css';
-import axios from 'axios';
-import { updateCompanies } from './redux/companies';
 import Header from './Components/Header'
-import Scroll from './Components/Scroll'
-// import CompaniesContainer from './Components/CompaniesContainer';
-import CompanyTile from './Components/CompanyTile'
+import CompaniesContainer from './Components/CompaniesContainer';
 import gladiators from './assets/gladiators-trimmed.png';
 import gladiators2 from './assets/gladiators-2-trimmed.png';
-import scrollPlaceholder from './assets/scroll-placeholder.png'
-import vs from './assets/vs-1.png';
 
-
-const api = axios.create( {
-  baseURL: 'http://localhost/fetch_companies'
-})
 
 function App() {
 
@@ -41,23 +30,11 @@ function App() {
     <div className='app'>
       <Header/>
       <Row className='d-flex body-container w-100 p-0 m-0'>
-        <Col className='outter-cols m-0 p-0 d-flex align-items-end justify-content-center'>
+        <Col className='col-sm-3 m-0 p-0 d-flex align-items-end justify-content-center'>
           <img className='gladiators1' src={gladiators}></img>
         </Col>
-        <Col className='inner-col col-sm-4 m-0 p-0 d-flex'>
-          <Col className='col-sm-4 m-0 p-0 d-flex justify-content-center align-items-end'>
-            {/* <Scroll className='scroll-left scroll'/> */}
-            {/* <div className='scroll-placeholder'/> */}
-            <img src={scrollPlaceholder} className='scroll-placeholder'/>
-          </Col>
-          <Col className='col-sm-4 m-0 p-0 d-flex justify-content-center align-items-center'>
-            <img className='verses' src={vs}></img>
-          </Col>
-          <Col className='col-sm-4 m-0 p-0 d-flex justify-content-center align-items-end'>
-            <img src={scrollPlaceholder} className='scroll-placeholder scroll-right'/>
-          </Col>
-        </Col>
-        <Col className='outter-cols m-0 p-0 d-flex align-items-end justify-content-center'>
+        <CompaniesContainer className='col-sm-2'/>
+        <Col className='col-sm-3 m-0 p-0 d-flex align-items-end justify-content-center'>
           <img className='gladiators2' src={gladiators2}></img>
         </Col>
       </Row>
