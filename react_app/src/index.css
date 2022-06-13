@@ -1,6 +1,14 @@
-html, body, #root{
+html {
   height: 100%;
   width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  background-color: black;
+  display: flex;
+  justify-content: center;
 }
 
 body {
@@ -13,6 +21,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   overflow-y: hidden;
+  align-items: center;
 
   /* Hide Scroll Bars */
   /* -ms-overflow-style: none;  IE and Edge */

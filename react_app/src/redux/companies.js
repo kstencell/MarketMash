@@ -5,20 +5,20 @@ export const companiesSlice = createSlice({
   initialState: {
     companies: [
     {
-        rank: 0,
-        name: 0,
-        symbol: 0,
-        market_cap: 0,
-        price: 0,
-        country: 0
+        rank: 2,
+        name: "Apple",
+        symbol: "AAPL",
+        market_cap: 2230000000,
+        price: 137.13,
+        country: "USA"
     },
     {
-        rank: 1,
-        name: 1,
-        symbol: 1,
-        market_cap: 1,
-        price: 1,
-        country: 1
+        rank: 3,
+        name: "Microsoft",
+        symbol: "MSFT",
+        market_cap: 1906000000,
+        price: 252.99,
+        country: "USA"
     }]
   },
   reducers: {

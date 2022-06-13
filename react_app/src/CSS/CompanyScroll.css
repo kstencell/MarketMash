@@ -3,13 +3,38 @@
     flex-direction: column;
     justify-content: space-between;
     max-height: 35%;
-    transition: all 0.5s ease-in-out;
-    -webkit-filter: drop-shadow(-1px -1px -2px #222);
+    transition: max-height 1s linear, transform .1s linear;
+    /* -webkit-filter: drop-shadow(-1px -1px -2px #222);
+    filter: drop-shadow(-1px 1px 2px #222); */
+}
+
+#left-scroll {
+    -webkit-filter: drop-shadow(-1px 1px 2px #222);
     filter: drop-shadow(-1px 1px 2px #222);
+    /* transition: all 0.1s linear; */
+}
+
+#right-scroll {
+    -webkit-filter: drop-shadow(1px 1px 2px #222);
+    filter: drop-shadow(1px 1px 2px #222);
 }
   
-.scroll-container:hover {
-    max-height:100%;
+.left-scroll-hover:hover {
+    /* max-height:100%; */
+    transform: scale(1.05);
+    -webkit-filter: drop-shadow(-3px 3px 7px #222);
+    filter: drop-shadow(-3px 3px 7px #222);
+}
+
+.right-scroll-hover:hover {
+    /* max-height:100%; */
+    transform: scale(1.05);
+    -webkit-filter: drop-shadow(3px 3px 7px #222);
+    filter: drop-shadow(3px 3px 7px #222);
+}
+
+.scroll-text-max-height {
+    max-height: 100%;
 }
 
 .scroll-top-container {
@@ -48,7 +73,7 @@
     max-height: 35%;
     z-index: 1;
     overflow: hidden;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s linear;
     font-family: Cinzel;
 }
 
@@ -58,8 +83,4 @@
 
 .scroll-text-left {
     right: 10px;
-}
-
-.scroll-text:hover {
-    max-height:100%;
 }
