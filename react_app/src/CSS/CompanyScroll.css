@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     max-height: 35%;
+    transform: scale(1);
     transition: max-height 1s linear, transform .1s linear;
     /* -webkit-filter: drop-shadow(-1px -1px -2px #222);
     filter: drop-shadow(-1px 1px 2px #222); */
@@ -20,14 +21,12 @@
 }
   
 .left-scroll-hover:hover {
-    /* max-height:100%; */
     transform: scale(1.05);
     -webkit-filter: drop-shadow(-3px 3px 7px #222);
     filter: drop-shadow(-3px 3px 7px #222);
 }
 
 .right-scroll-hover:hover {
-    /* max-height:100%; */
     transform: scale(1.05);
     -webkit-filter: drop-shadow(3px 3px 7px #222);
     filter: drop-shadow(3px 3px 7px #222);
@@ -73,7 +72,7 @@
     max-height: 35%;
     z-index: 1;
     overflow: hidden;
-    transition: all 0.3s linear;
+    transition: all 0.5s linear;
     font-family: Cinzel;
 }
 
