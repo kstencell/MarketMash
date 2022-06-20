@@ -9,9 +9,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import '../CSS/CompaniesContainer.css';
 import vs from '../assets/vs-1.png';
 
-const api = axios.create( {
-  baseURL: 'http://localhost/fetch_companies'
-})
+// const api = axios.create( {
+//   baseURL: 'http://localhost/fetch_companies'
+// })
 
 function CompaniesContainer() {
 

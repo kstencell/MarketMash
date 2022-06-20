@@ -3,16 +3,12 @@
     flex-direction: column;
     justify-content: space-between;
     max-height: 35%;
-    transform: scale(1);
     transition: max-height 1s linear, transform .1s linear;
-    /* -webkit-filter: drop-shadow(-1px -1px -2px #222);
-    filter: drop-shadow(-1px 1px 2px #222); */
 }
 
 #left-scroll {
     -webkit-filter: drop-shadow(-1px 1px 2px #222);
     filter: drop-shadow(-1px 1px 2px #222);
-    /* transition: all 0.1s linear; */
 }
 
 #right-scroll {
