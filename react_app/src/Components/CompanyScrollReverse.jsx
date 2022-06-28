@@ -5,6 +5,7 @@ import { Col } from 'react-bootstrap';
 import scrollTop from '../assets/scroll-top-reverse.png';
 import scrollBottom from '../assets/scroll-bottom-reverse.png';
 import { DisplayResults } from '../gameLogic.js';
+import { Textfit } from 'react-textfit';
 
 
 function CompanyScrollReverse() {
@@ -17,12 +18,14 @@ function CompanyScrollReverse() {
             <div id='right-scroll' className='scroll-container right-scroll-hover' onClick={() => DisplayResults(companies)}>
                 <div className='scroll-top-container m-0 p-0'>
                     <div className='scroll-text scroll-text-right'>
-                        <h3>{company2['name']}</h3>
+                    <Textfit mode="single" max="25">
+                        {company2['name']}
+                    </Textfit>
                         <h4>({company2['symbol']})</h4>
                         <br></br>
                         <br></br>
                         <h4>Market Cap:</h4>
-                        <h4>2.252T</h4>
+                        <h4>${company2['market_cap'].toLocaleString()}</h4>
                     </div>
                     <img className='scroll-top' src={scrollTop}></img>
                 </div>
