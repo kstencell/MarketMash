@@ -32,7 +32,7 @@ services:
       - db
     volumes:
       - ./react_app:/app
-    command: bash -c "npm install --force && npm run build"
+    command: bash -c "npm run build"
     stdin_open: true
 
   rest_api:
