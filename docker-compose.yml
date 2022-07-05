@@ -18,8 +18,8 @@ services:
       - ./nginx_reverse_proxy/config:/etc/nginx/conf.d/
       - ./nginx_reverse_proxy/logs:/var/log/nginx
       - ./react_app/build:/app/build
-      - ./certbot/conf:/etc/letsencrypt
-      - ./certbot/www:/var/www/certbot
+      - ./certbot/www:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/nginx/ssl/:ro
   
   certbot:
     image: certbot/certbot:latest
