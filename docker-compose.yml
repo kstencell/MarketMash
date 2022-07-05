@@ -17,12 +17,16 @@ services:
       - ./nginx_reverse_proxy/config:/etc/nginx/conf.d/
       - ./nginx_reverse_proxy/logs:/var/log/nginx
       - ./react_app/build:/app/build
+      - ../certbot/conf:/etc/letsencrypt
+      - ../certbot/www:/var/www/certbot
   
   certbot:
     image: certbot/certbot:latest
+    container_name: certbot
     volumes:
       - ./certbot/www/:/var/www/certbot/:rw
       - ./certbot/conf/:/etc/letsencrypt/:rw
+    command: certonly --webroot -w /var/www/certbot --force-renewal --email karldstencell@gmail.com -d marketmash.ca --agree-tos
 
   react:
     build: ./react_app
@@ -33,7 +37,7 @@ services:
     volumes:
       - ./react_app:/app
     command: bash -c "npm run build"
-    stdin_open: true
+    # stdin_open: true
 
   rest_api:
     build: ./php_rest_api
@@ -67,7 +71,7 @@ services:
       - db
     volumes:
       - ./python_updater:/usr/src/app
-    stdin_open: true
-    tty: true
+    # stdin_open: true
+    # tty: true
 
   
