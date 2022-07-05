@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1be934eb.css",
+    "main.js": "/static/js/main.5d50784a.js",
+    "static/media/arena-background-blue-sky.png": "/static/media/arena-background-blue-sky.bbed2b70f280afeb4dc4.png",
+    "static/media/vs-1.png": "/static/media/vs-1.c25db07109ce4c3faf21.png",
+    "static/media/logo-trimmed.png": "/static/media/logo-trimmed.0ebc2e712326520ab21e.png",
+    "static/media/gladiators-2-trimmed.png": "/static/media/gladiators-2-trimmed.b9fab68aa6418838be6e.png",
+    "static/media/gladiators-trimmed.png": "/static/media/gladiators-trimmed.738c646f83a26ec5ac80.png",
+    "static/media/choose-company.png": "/static/media/choose-company.b3cbb191a1f486d79db8.png",
+    "static/media/scroll-top-reverse.png": "/static/media/scroll-top-reverse.bd1c0b5b50e5d65cbe0e.png",
+    "static/media/scroll-top.png": "/static/media/scroll-top.2708e8e1ce68363faa61.png",
+    "index.html": "/index.html",
+    "main.1be934eb.css.map": "/static/css/main.1be934eb.css.map",
+    "main.5d50784a.js.map": "/static/js/main.5d50784a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1be934eb.css",
+    "static/js/main.5d50784a.js"
+  ]
+}
