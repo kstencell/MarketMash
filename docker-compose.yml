@@ -12,10 +12,17 @@ services:
       - db
     ports:
       - 80:80
+      - 443:443
     volumes:
       - ./nginx_reverse_proxy/config:/etc/nginx/conf.d/
       - ./nginx_reverse_proxy/logs:/var/log/nginx
       - ./react_app/build:/app/build
+  
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - ./certbot/www/:/var/www/certbot/:rw
+      - ./certbot/conf/:/etc/letsencrypt/:rw
 
   react:
     build: ./react_app
