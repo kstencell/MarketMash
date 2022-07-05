@@ -62,7 +62,7 @@ services:
     image: mysql:8.0-debian
     container_name: marketmash_mysql
     # command: mysqld --default-authentication-plugin=mysql_native_password
-    command: ['mysqld --default-authentication-plugin=mysql_native_password', 'mysqld --lower_case_table_names=2']
+    command: ["mysqld", "--default-authentication-plugin=mysql_native_password", "--lower_case_table_names=2"]
     volumes:
       - ./mysql_server/data:/var/lib/mysql
     # ports:
