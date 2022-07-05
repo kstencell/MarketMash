@@ -8,7 +8,6 @@ services:
     image: nginx:1.21.6
     container_name: marketmash_reverse_proxy
     depends_on:
-      - react
       - rest_api
       - db
     ports:
@@ -31,15 +30,15 @@ services:
       - ./certbot/conf/:/etc/letsencrypt/:rw
     command: certonly --webroot -w /var/www/certbot --force-renewal --email karldstencell@gmail.com -d marketmash.ca --agree-tos
 
-  react:
-    build: ./react_app
-    container_name: marketmash_react
-    depends_on:
-      - rest_api
-      - db
-    volumes:
-      - ./react_app:/app
-    command: bash -c "npm run build"
+  # react:
+  #   build: ./react_app
+  #   container_name: marketmash_react
+  #   depends_on:
+  #     - rest_api
+  #     - db
+  #   volumes:
+  #     - ./react_app:/app
+  #   command: bash -c "npm run build"
     # stdin_open: true
 
   rest_api:
