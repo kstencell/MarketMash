@@ -18,9 +18,6 @@
         public function GetTwoRandomCompanies()
         {
             return $this->conn->query("CALL GetTwoRandomCompanies()");
-            // $companies = $this->conn->prepare($query);
-            // $companies->execute();
-            // return $companies;
         }
     }
 

@@ -10,15 +10,13 @@ const api = axios.create( {
 
 export function DisplayResults(companies) {
 
-    console.log(companies);
-
     $("#left-scroll").removeClass("left-scroll-hover");
     $("#right-scroll").removeClass("right-scroll-hover");
 
     $(".scroll-container").css("transition", "max-height 1s linear, transform 0.7s linear");
     $(".scroll-text").css("transition", "max-height 0.5s linear");
 
-    if (companies[0]['rank'] <= companies[1]['rank']) {
+    if (Number(companies[0]['rank']) <= Number(companies[1]['rank'])) {
         $(function () {
             $("#left-scroll").animate({
                 'max-height': '100%'
@@ -119,27 +117,8 @@ export const FetchCompanies = async() => {
 
     try {
         const response = await api.get('/');
-        console.log(response.data);
+        // console.log(response.data);
         store.dispatch(updateCompanies(response.data));
-        // store.dispatch(updateCompanies(
-        //     [
-        //         {
-        //             rank: 4,
-        //             name: "Amazon",
-        //             symbol: "AMZN",
-        //             market_cap: 2230000000,
-        //             price: 137.13,
-        //             country: "USA"
-        //         },
-        //         {
-        //             rank: 3,
-        //             name: "Tesla",
-        //             symbol: "TSLA",
-        //             market_cap: 1906000000,
-        //             price: 252.99,
-        //             country: "USA"
-        //         }]
-        // ));
     }
     catch (err) {
         console.log("error fetching companies");

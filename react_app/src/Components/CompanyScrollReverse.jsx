@@ -25,12 +25,12 @@ function CompanyScrollReverse() {
                         <br></br>
                         <br></br>
                         <h4>Market Cap:</h4>
-                        <h4>${company2['market_cap'].toLocaleString()}</h4>
+                        <h4>${Number(company2['market_cap']).toLocaleString()}</h4>
                     </div>
-                    <img className='scroll-top' src={scrollTop}></img>
+                    <img className='scroll-top' alt='parchment scroll top' src={scrollTop}></img>
                 </div>
                 <div className='scroll-bottom-container p-0 m-0'>
-                    <img className='scroll scroll-bottom' src={scrollBottom}></img>
+                    <img className='scroll scroll-bottom' alt='parchment scroll body' src={scrollBottom}></img>
                 </div>
             </div>
         </Col>

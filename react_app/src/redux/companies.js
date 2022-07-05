@@ -23,7 +23,6 @@ export const companiesSlice = createSlice({
   },
   reducers: {
     updateCompanies: (state, action) => {
-        console.log(action);
         return {
             companies: action.payload
         };

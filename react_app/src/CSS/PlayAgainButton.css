@@ -1,7 +1,5 @@
 
 .play-again-btn {
-    /* appearance: none; */
-    /* backface-visibility: hidden; */
     background-color: #0F9D58;
     border-radius: 8px;
     border-style: none;
@@ -9,7 +7,6 @@
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    /* display: inline-block; */
     font-family: Cinzel;
     font-size: 25px;
     font-weight: 600;

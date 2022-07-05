@@ -1,3 +1,17 @@
 .header {
     height: 30vh;
+    flex-direction: column;
+}
+
+.choose-company-text-container {
+    position: absolute;
+    top: 28vh;
+    max-width: 600px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.choose-company-text {
+    height: 100%;
+    width: 100%;
 }
