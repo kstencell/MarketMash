@@ -1297,3 +1297,4 @@
 2022/07/05 13:04:00 [notice] 1#1: worker process 23 exited with code 0
 2022/07/05 13:04:00 [notice] 1#1: worker process 24 exited with code 0
 2022/07/05 13:04:00 [notice] 1#1: exit
+2022/07/05 14:10:03 [emerg] 1#1: cannot load certificate "/etc/nginx/ssl/live/marketmash.ca/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/ssl/live/marketmash.ca/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
