@@ -17,18 +17,18 @@ services:
       - ./nginx_reverse_proxy/config:/etc/nginx/conf.d/
       - ./nginx_reverse_proxy/logs:/var/log/nginx
       - ./react_app/build:/app/build
-      - ./certbot/www:/var/www/certbot/:ro
-      - ./certbot/conf/:/etc/nginx/ssl/:ro
+        #- ./certbot/www:/var/www/certbot/:ro
+        #- ./certbot/conf/:/etc/nginx/ssl/:ro
   
-  certbot:
-    image: certbot/certbot:latest
-    container_name: certbot
-    depends_on:
-      - reverse_proxy_nginx
-    volumes:
-      - ./certbot/www/:/var/www/certbot/:rw
-      - ./certbot/conf/:/etc/letsencrypt/:rw
-    command: certonly --webroot -w /var/www/certbot --force-renewal --email karldstencell@gmail.com -d marketmash.ca --agree-tos
+  #certbot:
+  #  image: certbot/certbot:latest
+  #  container_name: certbot
+  #  depends_on:
+  #    - reverse_proxy_nginx
+  #  volumes:
+  #    - ./certbot/www/:/var/www/certbot/:rw
+  #    - ./certbot/conf/:/etc/letsencrypt/:rw
+  #  command: certonly --webroot -w /var/www/certbot --force-renewal --email karldstencell@gmail.com -d marketmash.ca --agree-tos
 
   # react:
   #   build: ./react_app
@@ -64,17 +64,17 @@ services:
     # command: ["mysqld", "--default-authentication-plugin=mysql_native_password", "--lower_case_table_names=2 --force"]
     volumes:
       - ./mysql_server/data:/var/lib/mysql
-    ports:
-      - 3306:3306
+        #ports:
+            #- 3306:3306
 
-  python_updater:
-    build: ./python_updater
-    container_name: marketmash_python_updater
-    depends_on:
-      - db
-    volumes:
-      - ./python_updater:/usr/src/app
-    stdin_open: true
-    tty: true
+        #python_updater:
+        #build: ./python_updater
+        #container_name: marketmash_python_updater
+        #depends_on:
+      #- db
+      #volumes:
+      #- ./python_updater:/usr/src/app
+      #stdin_open: true
+      #tty: true
 
   

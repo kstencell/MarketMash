@@ -1385,3 +1385,49 @@
 2022/07/06 17:20:38 [notice] 1#1: signal 17 (SIGCHLD) received from 22
 2022/07/06 17:20:38 [notice] 1#1: worker process 22 exited with code 0
 2022/07/06 17:20:38 [notice] 1#1: exit
+2022/07/06 17:32:51 [emerg] 1#1: cannot load certificate "/etc/nginx/ssl/live/marketmash.ca/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/ssl/live/marketmash.ca/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/06 18:41:14 [notice] 1#1: using the "epoll" event method
+2022/07/06 18:41:14 [notice] 1#1: nginx/1.21.6
+2022/07/06 18:41:14 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/06 18:41:14 [notice] 1#1: OS: Linux 5.4.0-121-generic
+2022/07/06 18:41:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/06 18:41:14 [notice] 1#1: start worker processes
+2022/07/06 18:41:14 [notice] 1#1: start worker process 22
+2022/07/06 18:44:06 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/06 18:44:06 [notice] 22#22: gracefully shutting down
+2022/07/06 18:44:06 [notice] 22#22: exiting
+2022/07/06 18:44:06 [notice] 22#22: exit
+2022/07/06 18:44:06 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/07/06 18:44:06 [notice] 1#1: worker process 22 exited with code 0
+2022/07/06 18:44:06 [notice] 1#1: exit
+2022/07/06 18:45:31 [notice] 1#1: using the "epoll" event method
+2022/07/06 18:45:31 [notice] 1#1: nginx/1.21.6
+2022/07/06 18:45:31 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/06 18:45:31 [notice] 1#1: OS: Linux 5.4.0-121-generic
+2022/07/06 18:45:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/06 18:45:31 [notice] 1#1: start worker processes
+2022/07/06 18:45:31 [notice] 1#1: start worker process 21
+2022/07/06 18:47:25 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/06 18:47:25 [notice] 21#21: gracefully shutting down
+2022/07/06 18:47:25 [notice] 21#21: exiting
+2022/07/06 18:47:25 [notice] 21#21: exit
+2022/07/06 18:47:25 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/07/06 18:47:25 [notice] 1#1: worker process 21 exited with code 0
+2022/07/06 18:47:25 [notice] 1#1: exit
+2022/07/06 18:54:29 [notice] 1#1: using the "epoll" event method
+2022/07/06 18:54:29 [notice] 1#1: nginx/1.21.6
+2022/07/06 18:54:29 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/06 18:54:29 [notice] 1#1: OS: Linux 5.4.0-121-generic
+2022/07/06 18:54:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/06 18:54:29 [notice] 1#1: start worker processes
+2022/07/06 18:54:29 [notice] 1#1: start worker process 22
+2022/07/06 18:54:34 [error] 22#22: *1 open() "/app/build/cgi-bin/ViewLog.asp" failed (2: No such file or directory), client: 120.142.105.230, server: , request: "POST /cgi-bin/ViewLog.asp HTTP/1.1", host: "127.0.0.1"
+2022/07/06 18:57:50 [error] 22#22: *5 open() "/app/build/cgi-bin/ViewLog.asp" failed (2: No such file or directory), client: 118.81.144.229, server: , request: "POST /cgi-bin/ViewLog.asp HTTP/1.1", host: "127.0.0.1"
+2022/07/06 18:59:58 [error] 22#22: *7 open() "/app/build/cgi-bin/ViewLog.asp" failed (2: No such file or directory), client: 187.228.246.103, server: , request: "POST /cgi-bin/ViewLog.asp HTTP/1.1", host: "127.0.0.1"
+2022/07/06 19:08:37 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/06 19:08:37 [notice] 22#22: gracefully shutting down
+2022/07/06 19:08:37 [notice] 22#22: exiting
+2022/07/06 19:08:37 [notice] 22#22: exit
+2022/07/06 19:08:37 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/07/06 19:08:37 [notice] 1#1: worker process 22 exited with code 0
+2022/07/06 19:08:37 [notice] 1#1: exit
