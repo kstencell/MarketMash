@@ -1369,3 +1369,19 @@
 2022/07/05 17:44:52 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/marketmash.ca/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/marketmash.ca/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
 2022/07/05 17:45:16 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/marketmash.ca/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/marketmash.ca/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
 2022/07/05 20:58:06 [emerg] 1#1: cannot load certificate "/etc/nginx/ssl/live/marketmash.ca/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/ssl/live/marketmash.ca/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/06 00:59:48 [emerg] 1#1: cannot load certificate "/etc/nginx/ssl/live/marketmash.ca/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/ssl/live/marketmash.ca/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/06 17:08:36 [emerg] 1#1: cannot load certificate "/etc/nginx/ssl/live/marketmash.ca/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/ssl/live/marketmash.ca/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/06 17:17:03 [notice] 1#1: using the "epoll" event method
+2022/07/06 17:17:03 [notice] 1#1: nginx/1.21.6
+2022/07/06 17:17:03 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/06 17:17:03 [notice] 1#1: OS: Linux 5.4.0-121-generic
+2022/07/06 17:17:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/06 17:17:03 [notice] 1#1: start worker processes
+2022/07/06 17:17:03 [notice] 1#1: start worker process 22
+2022/07/06 17:20:38 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/06 17:20:38 [notice] 22#22: gracefully shutting down
+2022/07/06 17:20:38 [notice] 22#22: exiting
+2022/07/06 17:20:38 [notice] 22#22: exit
+2022/07/06 17:20:38 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/07/06 17:20:38 [notice] 1#1: worker process 22 exited with code 0
+2022/07/06 17:20:38 [notice] 1#1: exit
