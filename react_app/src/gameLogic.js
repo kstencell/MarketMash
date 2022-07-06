@@ -5,7 +5,7 @@ import store from './redux/store';
 
 
 const api = axios.create( {
-    baseURL: 'http://localhost/fetch_companies'
+    baseURL: 'http://marketmash.ca/fetch_companies'
 });
 
 export function DisplayResults(companies) {
