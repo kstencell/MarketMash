@@ -14,15 +14,16 @@ BEGIN
     SELECT CEIL(RAND() * max_rank)
     INTO random2;
     
-    IF random1 = random1 AND random1 = max_rank THEN
+    /*
+    IF random1 = random2 AND random1 = max_rank THEN
 		SET random2 = random1-1;
 	ELSE
 		SET random2 = random1+1;
 	END IF;
-    
+    */
 	SELECT `rank`, `name`, `symbol`, `market_cap`, `price`, `country`
-	FROM companies AS r1 
+	FROM companies AS r1
 	WHERE r1.`rank` = random1 OR r1.`rank` = random2
-	ORDER BY r1.`rank` ASC
+	ORDER BY RAND()
 	LIMIT 2;
 END
