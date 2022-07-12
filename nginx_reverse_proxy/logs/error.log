@@ -1964,3 +1964,79 @@
 2022/07/12 14:59:59 [notice] 1#1: signal 17 (SIGCHLD) received from 22
 2022/07/12 14:59:59 [notice] 1#1: worker process 22 exited with code 0
 2022/07/12 14:59:59 [notice] 1#1: exit
+2022/07/12 16:32:10 [notice] 1#1: using the "epoll" event method
+2022/07/12 16:32:10 [notice] 1#1: nginx/1.21.6
+2022/07/12 16:32:10 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/12 16:32:10 [notice] 1#1: OS: Linux 5.4.0-121-generic
+2022/07/12 16:32:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/12 16:32:10 [notice] 1#1: start worker processes
+2022/07/12 16:32:10 [notice] 1#1: start worker process 22
+2022/07/12 16:33:12 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/12 16:33:12 [notice] 22#22: gracefully shutting down
+2022/07/12 16:33:12 [notice] 22#22: exiting
+2022/07/12 16:33:12 [notice] 22#22: exit
+2022/07/12 16:33:12 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/07/12 16:33:12 [notice] 1#1: worker process 22 exited with code 0
+2022/07/12 16:33:12 [notice] 1#1: exit
+2022/07/12 17:14:27 [notice] 1#1: using the "epoll" event method
+2022/07/12 17:14:27 [notice] 1#1: nginx/1.21.6
+2022/07/12 17:14:27 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/12 17:14:27 [notice] 1#1: OS: Linux 5.4.0-121-generic
+2022/07/12 17:14:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/12 17:14:27 [notice] 1#1: start worker processes
+2022/07/12 17:14:27 [notice] 1#1: start worker process 22
+2022/07/12 17:29:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/12 17:29:47 [notice] 22#22: gracefully shutting down
+2022/07/12 17:29:47 [notice] 22#22: exiting
+2022/07/12 17:29:47 [notice] 22#22: exit
+2022/07/12 17:29:47 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/07/12 17:29:47 [notice] 1#1: worker process 22 exited with code 0
+2022/07/12 17:29:47 [notice] 1#1: exit
+2022/07/12 18:12:36 [notice] 1#1: using the "epoll" event method
+2022/07/12 18:12:36 [notice] 1#1: nginx/1.21.6
+2022/07/12 18:12:36 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/12 18:12:36 [notice] 1#1: OS: Linux 5.4.0-121-generic
+2022/07/12 18:12:36 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/12 18:12:36 [notice] 1#1: start worker processes
+2022/07/12 18:12:36 [notice] 1#1: start worker process 21
+2022/07/12 18:14:50 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/12 18:14:50 [notice] 21#21: gracefully shutting down
+2022/07/12 18:18:47 [notice] 1#1: using the "epoll" event method
+2022/07/12 18:18:47 [notice] 1#1: nginx/1.21.6
+2022/07/12 18:18:47 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/12 18:18:47 [notice] 1#1: OS: Linux 5.4.0-121-generic
+2022/07/12 18:18:47 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/12 18:18:47 [notice] 1#1: start worker processes
+2022/07/12 18:18:47 [notice] 1#1: start worker process 23
+2022/07/12 18:23:21 [error] 23#23: *10 open() "/app/build/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php" failed (2: No such file or directory), client: 185.7.214.104, server: marketmash.ca, request: "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1", host: "marketmash.ca", referrer: "http://178.128.231.181:80/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php"
+2022/07/12 18:25:35 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/12 18:25:35 [notice] 23#23: gracefully shutting down
+2022/07/12 18:25:35 [notice] 23#23: exiting
+2022/07/12 18:25:35 [notice] 23#23: exit
+2022/07/12 18:25:35 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2022/07/12 18:25:35 [notice] 1#1: worker process 23 exited with code 0
+2022/07/12 18:25:35 [notice] 1#1: exit
+2022/07/12 18:26:51 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nginx.conf:52
+2022/07/12 18:26:53 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nginx.conf:52
+2022/07/12 18:26:54 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nginx.conf:52
+2022/07/12 18:26:56 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nginx.conf:52
+2022/07/12 18:26:57 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nginx.conf:52
+2022/07/12 18:27:00 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nginx.conf:52
+2022/07/12 18:27:04 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nginx.conf:52
+2022/07/12 18:27:11 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nginx.conf:52
+2022/07/12 18:28:30 [notice] 1#1: using the "epoll" event method
+2022/07/12 18:28:30 [notice] 1#1: nginx/1.21.6
+2022/07/12 18:28:30 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/12 18:28:30 [notice] 1#1: OS: Linux 5.4.0-121-generic
+2022/07/12 18:28:30 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/12 18:28:30 [notice] 1#1: start worker processes
+2022/07/12 18:28:30 [notice] 1#1: start worker process 21
+2022/07/12 18:29:22 [error] 21#21: *4 open() "/app/build/ab2g" failed (2: No such file or directory), client: 139.59.183.38, server: marketmash.ca, request: "GET /ab2g HTTP/1.1", host: "178.128.231.181"
+2022/07/12 18:29:22 [error] 21#21: *5 open() "/app/build/ab2h" failed (2: No such file or directory), client: 139.59.183.38, server: marketmash.ca, request: "GET /ab2h HTTP/1.1", host: "178.128.231.181"
+2022/07/12 18:29:36 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/12 18:29:36 [notice] 21#21: gracefully shutting down
+2022/07/12 18:29:36 [notice] 21#21: exiting
+2022/07/12 18:29:36 [notice] 21#21: exit
+2022/07/12 18:29:36 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/07/12 18:29:36 [notice] 1#1: worker process 21 exited with code 0
+2022/07/12 18:29:36 [notice] 1#1: exit

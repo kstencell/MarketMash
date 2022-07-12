@@ -20,15 +20,15 @@ services:
       - ./certbot/www:/var/www/certbot/:ro
       - ./certbot/conf/:/etc/nginx/ssl/:ro
   
-  certbot:
-    image: certbot/certbot:latest
-    container_name: certbot
-    depends_on:
-      - reverse_proxy_nginx
-    volumes:
-      - ./certbot/www/:/var/www/certbot/:rw
-      - ./certbot/conf/:/etc/letsencrypt/:rw
-    command: certonly --webroot -w /var/www/certbot --email karldstencell@gmail.com -d marketmash.ca --agree-tos
+        #certbot:
+        #image: certbot/certbot:latest
+        #container_name: certbot
+        #depends_on:
+        #- reverse_proxy_nginx
+        #volumes:
+        #- ./certbot/www/:/var/www/certbot/:rw
+        #- ./certbot/conf/:/etc/letsencrypt/:rw
+        #command: certonly --webroot -w /var/www/certbot --email karldstencell@gmail.com -d marketmash.ca --agree-tos
     # command: certonly --webroot -w /var/www/certbot --force-renewal --email karldstencell@gmail.com -d marketmash.ca --agree-tos
 
   # react:
@@ -59,14 +59,14 @@ services:
     volumes:
       - ./mysql_server/data:/var/lib/mysql
 
-  python_updater:
-    build: ./python_updater
-    container_name: marketmash_python_updater
-    depends_on:
-      - db
-    volumes:
-      - ./python_updater:/usr/src/app
-    stdin_open: true
-    tty: true
+        #  python_updater:
+        #build: ./python_updater
+    #container_name: marketmash_python_updater
+    #depends_on:
+    #  - db
+    #volumes:
+    #  - ./python_updater:/usr/src/app
+    #stdin_open: true
+    #tty: true
 
   
